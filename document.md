@@ -1,4 +1,4 @@
-<img src="C:\Users\infam\OneDrive - NMIT\Pictures\Coding_Snippets\Learn_GitBranching.PNG"
+<img src="C:\Users\infam\Desktop\Coding_Snippets\Learn_GitBranching.PNG"
      alt="Git Branching Completion"
      style="float: left; margin-right: 10px;" />
 
