@@ -1,5 +1,3 @@
-<img src="C:\Users\infam\Desktop\Coding_Snippets\Learn_GitBranching.png"
-     alt="Git Branching Completion"
-     style="float: left; margin-right: 10px;" />
+<a href=”hhttps://drive.google.com/file/d/1DcVlZJVFYlJ7RA19-dW3vKhQutdoNxZn/view?usp=sharing” target=”_blank”>
 
      Evidence of Git branching completetion, I found that revising this topic has assisted me by enforcing knowledge of git commands and git branching.
