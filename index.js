@@ -1,4 +1,4 @@
- /* //TODO Javascript Variables
+//TODO Javascript Variables
 console.log('Hello SDV503')
 console.log('Matthew Fraser')
 
@@ -12,21 +12,17 @@ let fullName = firstName + ' ' + lastName //ES5
 //Console.log firstName + lastName prints MatthewFraser into the terminal 
 console.log(fullName)
 
-*/
 
-/* let x;
+ let c;
 
-if(x < 0) {
+if(c < 0) {
     console.log('Ali')
 }
 else {
     console.log('Error')
 }
 
-
-Function()
-
-console.log('error')
+console.log(c)
 
 x = "1234567"
 let y = Number(x)
@@ -39,6 +35,7 @@ console.log(a)
 let Matt
 console.log(Matt)
 
+//Storing information using object
 const information = {
     student: "Ali",
     country: 'Iraq',
@@ -47,13 +44,32 @@ const information = {
 }
 console.log(Object)
 
-*/
 
-const information = {
+const personalInformation = {
     Name: 'Matthew',
     Age: '24',
     City: 'Nelson',
     Occupation: 'Student'
 }
 
-console.log(information)
+console.log(personalInformation)
+
+
+let c = 12
+
+//OR logic gate
+if (c === 11 || typeof c === 'number') {
+    console.log('True')
+} else {
+    console.log('error')
+}
+
+//NOT logic gat
+
+let b = 15
+
+if (b != 12) {
+    console.log('its true')
+} else {
+    console.log('ERROR')
+}
