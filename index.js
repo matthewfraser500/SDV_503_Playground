@@ -1,3 +1,5 @@
+
+/*
 //TODO Javascript Variables
 console.log('Hello SDV503')
 console.log('Matthew Fraser')
@@ -73,3 +75,12 @@ if (b != 12) {
 } else {
     console.log('ERROR')
 }
+*/
+let a = 5
+let b = a
+console.log(a)
+console.log(b)
+console.log(a === b)
+console.log(a)
+console.log(b)
+console.log(a === b)
