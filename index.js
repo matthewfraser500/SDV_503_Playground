@@ -107,8 +107,12 @@ language = "English"
 language = {
     name: "Matthew",
     city: "Nelson",
-    country: "New Zealand"
+    country: "New Zealand",
+    postcode: 7010
 }
+
+postcode++
+
 
 console.log(typeof(language))
 
@@ -118,8 +122,27 @@ console.log(language.city)
 console.log(language.country)
 console.log(language.name)
 
-brands = {
+
+//Below shows you can change an object even if const has been used
+const brands = {
     converse: "All-Star",
     Doc: "Martin",
 }
+console.log(brands)
+console.log(converse = "Star")
 
+console.log(city + " " + country + " " + postcode)
+
+//This is how you create a string template !!important to remember back ticks
+console.log(`${city} ${country} ${postcode}`)
+
+//if else statements, if & else are keywords // === is refered to "hard equals" //
+
+// you can add as many if statements you like using else if // 
+if(postcode === 7011) {
+    console.log('Nelson')
+} else if(postcode === 7020) {
+    console.log('Richmond')
+} else {
+    console.log('Write city name')
+}
