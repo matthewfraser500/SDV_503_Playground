@@ -76,6 +76,8 @@ if (b != 12) {
     console.log('ERROR')
 }
 */
+
+/*
 let a = 5
 let b = a
 console.log(a)
@@ -84,3 +86,40 @@ console.log(a === b)
 console.log(a)
 console.log(b)
 console.log(a === b)
+*/ 
+
+let country = "New Zealand";
+let city = "Nelson";
+let postcode = 7010;
+
+let isIsland = false
+let language
+
+//typeof allows us to determine a datatype
+
+console.log(typeof isIsland)
+console.log(typeof languague)
+
+console.log(city + ' ' + country + ' ' + postcode);
+
+language = "English"
+
+language = {
+    name: "Matthew",
+    city: "Nelson",
+    country: "New Zealand"
+}
+
+console.log(typeof(language))
+
+//How to access and object
+
+console.log(language.city)
+console.log(language.country)
+console.log(language.name)
+
+brands = {
+    converse: "All-Star",
+    Doc: "Martin",
+}
+
