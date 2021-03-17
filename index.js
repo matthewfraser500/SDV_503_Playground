@@ -15,6 +15,8 @@ let fullName = firstName + ' ' + lastName //ES5
 console.log(fullName)
 
 
+##Week4 - class one
+
  let c;
 
 if(c < 0) {
@@ -88,6 +90,8 @@ console.log(b)
 console.log(a === b)
 */ 
 
+//## Week4 Class 2
+
 let country = "New Zealand";
 let city = "Nelson";
 let postcode = 7010;
@@ -146,3 +150,34 @@ if(postcode === 7011) {
 } else {
     console.log('Write city name')
 }
+
+let a = 'A+'
+let b = 'B+'
+
+let studentOne = 75
+
+if (studentOne >= 70 && studentOne <= 80 ) {
+    console.log(b)
+} else if (studentOne < 70) {
+    console.log('c')
+}
+
+console.log(24 >= 24)
+console.log(25 < 26)
+
+//This returns false because the comparision is false between datatypes//
+console.log('24' === 24)
+console.log(24 !== 24)
+console.log('24' == 24)
+
+console.log(0 == false)
+console.log(1 == true)
+console.log(2 == true)
+
+const x = {
+    city: 'Nelson'
+}
+
+const y = x
+
+console.log(y.city)
