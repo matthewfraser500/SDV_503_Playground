@@ -276,9 +276,54 @@ let c = 0;
 while (c++ < 5)
 console.log(c);
 
-let y = 0;
-while (y++ < 1000) {
-    if (y > 1)
+let p = 0;
+while (p++ < 1000) {
+    if (p > 1)
     continue;
-    console.log(y);
+    console.log(p);
 }
+
+//Week 5 Class-2
+
+//Switch statements
+
+const person = 'Joe'
+switch (person) {
+    case 'Jane':
+        console.log('Hi Jane');
+        break;
+    case 'John':
+        console.log('Hi John')
+        break;
+    case 'Joe':
+        console.log('Hi Joe')
+        break;
+    case 'Mary':
+        console.log('Mary')
+        break;
+    default:
+        console.log('Hi')
+        break;
+}
+
+const grade = 19
+switch (grade) {
+    case grade >= 100:
+        console.log('A');
+        break;
+    case (grade >= 100):
+        console.log('B')
+        break;
+    case (grade >= 100):
+        console.log('C')
+        break;
+    case grade <= 20:
+        console.log('Fail')
+        break;
+    default:
+        console.log('Enter Grade')
+        break;
+}
+
+
+
