@@ -306,24 +306,98 @@ switch (person) {
         break;
 }
 
-const grade = 19
-switch (grade) {
-    case grade >= 100:
+// Within the switch statement it only works because the true statement will excute the code..
+
+let grade = 90
+switch (true) {
+    case (grade >= 100):
         console.log('A');
-        break;
-    case (grade >= 100):
+        break
+    case (grade >= 80):
         console.log('B')
-        break;
-    case (grade >= 100):
+        break
+    case (grade >= 50):
         console.log('C')
-        break;
-    case grade <= 20:
+        break
+    case (grade <= 20):
         console.log('Fail')
-        break;
+        break
     default:
-        console.log('Enter Grade')
-        break;
+    console.log('Enter Grade')
 }
 
+/*
+const foo = 1;
+switch (foo) {
+    case 1:
+    case 2:
+    case 3:
+    case 4:
+        console.log('I like this number');
+        break;
+    case -1:
+    case -2:
+        console.log('I love this number');
+        break;
+    default:
+        console.log('I don\'t like this number');
+}
+
+const foo = 1;
+let output = "";
+switch (foo) {
+    case 0:
+        output += 'So ';
+    case 1:
+        output += 'How ';
+        output += 'Old ';
+    case 2:
+        output += 'Are ';
+    case 3:
+        output += 'You ';
+    case 4:
+        output += '?';
+        console.log(output);
+        break;
+    case 5:
+        output += '!';
+        console.log(output);
+        break;
+    default:
+        console.log('Please pick a number from 0 to 5!');
+}
+
+*/
+
+// Terany Operators
+
+let persons = {
+    name: 'tony',
+    age: 20,
+    driver: null
+};
+
+if (persons.age >= 16) {
+    persons.driver = 'Yes';
+} else {
+    persons.driver = 'No';
+}
+
+// The condition (persons.driver and persons.age) is what we are testing here //
+
+persons.driver = persons.age >= 16 ? 'Yes' : 'No'
+console.log(persons)
+
+// Using the boolean data type true it will initiate the the price is 8: True, else false.
+
+let isStudent = true;
+
+let cost = isStudent ? 8 : 12
+console.log(cost);
+
+let student = false;
+let isSenior = true;
+let cost = student ? 8 : isSenior ? 6 : 10
+console.log(cost); 
 
 
