@@ -402,6 +402,108 @@
 // let cost = student ? 8 : isSenior ? 6 : 10
 // console.log(cost); 
 
+//Prototypal Inheritance Visualized//
 
+// let arr = [1, 2, 3, 4, 5]
+// console.log(arr.length)
 
+// //ES6
 
+// function Dog(name, breed, color) {
+//     this.name = name
+//     this.breed = breed
+//     this.color = color
+//     this.bark = function() {
+
+//     }
+// }
+
+// const dog1 = new Dog(
+//     "Daisy",
+//     "Labrador",
+//     "black"
+// )
+
+// const dog2 = new Dog(
+//     "Jack",
+//     "Jack Russell",
+//     "white"
+// )
+
+// Dog.prototype
+// dog1.toString()
+
+// const student = {
+//     name: "Bob",
+//     year: "one",
+//     class: "SDV503"
+// }
+
+// console.log(student.name)
+// student.name = "Matthew"
+// console.log(student)
+
+const info = {
+    firstName: 'John',
+    lastName: 'Smith',
+    dateOfBirth: '1st DEC 2000',
+    friends: ['Bob', 'Tom']
+}
+
+console.log(info.friends[0])
+
+const example = {
+    nestedObj: {
+        name: 'Alex'
+    }
+}
+console.log(example)
+
+const anotherObj = new Object()
+
+console.log(anotherObj)
+
+const propsName = 'firstName'
+
+const objOne = {
+    [propsName.toUpperCase()]: 'Alex'
+}
+
+console.log(objOne)
+
+const objTwo = {
+    firstName: 'Alex',
+    lastName: 'Ali',
+    printFullName() {
+        //Remember Back Ticks ``//
+        return `${this.firstName} ${this.lastName}`
+    }
+}
+
+console.log(objTwo.printFullName())
+
+console.log(objTwo.firstName)
+console.log(objTwo['firstName'])
+
+console.log(objTwo.hasOwnProperty('lastName'))
+console.log(objTwo.hasOwnProperty('address'))
+
+//Changing the 'Name' property witin an object//
+
+objTwo.firstName = 'Matt'
+console.log(objTwo.firstName)
+
+//Deleting a value within an object//
+
+const newProps = delete objTwo.firstName
+console.log(newProps)
+
+//or
+
+console.log(delete objTwo.firstName)
+console.log(objTwo.hasOwnProperty('firstName'))
+
+//Also
+
+const newProps = delete objTwo.firstName
+console.log(newProps)
