@@ -371,35 +371,37 @@
 
 // // Terany Operators
 
- let persons = {
-     name: 'tony',
-     age: 20,
-     driver: null
- };
+//  let persons = {
+//      name: 'tony',
+//      age: 20,
+//      driver: null
+//  };
 
- if (persons.age >= 16) {
-     persons.driver = 'Yes';
- } else {
-     persons.driver = 'No';
- }
+//  if (persons.age >= 16) {
+//      persons.driver = 'Yes';
+//  } else {
+//      persons.driver = 'No';
+//  }
 
-// The condition (persons.driver and persons.age) is what we are testing here //
+// // The condition (persons.driver and persons.age) is what we are testing here //
 
-persons.driver = persons.age >= 16 ? 'Yes' : 'No'
-console.log(persons)
+// persons.driver = persons.age >= 16 ? 'Yes' : 'No'
+// console.log(persons)
 
 
 
-// Using the boolean data type true it will initiate the the price is 8: True, else false.
+// // Using the boolean data type true it will initiate the the price is 8: True, else false.
 
-let isStudent = true;
+// let isStudent = true;
 
-let price = isStudent ? 8 : 12
-console.log(price);
+// let price = isStudent ? 8 : 12
+// console.log(price);
 
-let student = false;
-let isSenior = true;
-let cost = student ? 8 : isSenior ? 6 : 10
-console.log(cost); 
+// let student = false;
+// let isSenior = true;
+// let cost = student ? 8 : isSenior ? 6 : 10
+// console.log(cost); 
+
+
 
 
