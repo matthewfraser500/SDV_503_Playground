@@ -509,3 +509,82 @@
 // console.log(newProps)
 
 // Week-6 class 2
+
+// JavaScript call stack
+
+// console.log("Hello!!")
+
+// function greet() {
+//     return "Hello from function"
+// }
+
+// const print = "My name"
+
+// console.log(greet())
+
+// let anotherVar = 5
+
+// function firstFunction() {
+//      throw new Error('Stack Trace Error');
+// }
+// function secondFunction(){
+// firstFunction();
+// }
+// function thirdFunction(){
+// secondFunction();
+// }
+// thirdFunction();
+
+// const a = 60
+// const b = 40
+
+// function func(number) {
+// return a + b
+// }
+
+// console.log(func())
+
+// const greetStudent = () => { console.log('Hello Matt') }
+
+// console.log(greetStudent())
+
+//Non primitave data sit's within the heap
+//(objects, arrays)
+
+//Primiate data sits within the call stack
+//(Boolean, numbers, strings etc)
+
+// const numbers = 0
+// numbers = 1 + 2 + 3 + 4 + 5
+
+//try to use const in this case
+const numbers = []
+numbers.push(1)
+numbers.push(2)
+numbers.push(3)
+numbers.push(4)
+numbers.push(5)
+
+console.log(numbers)
+
+// const importantID = 489
+// importantID = 100
+
+//When “importantID” is declared, 
+//a memory address is allocated, and the value of 489 is stored. 
+//Remember to think of the variable “importantID” as equalling the memory address.
+
+const arr = [];
+
+arr.push(1)
+arr.push(2)
+
+console.log(arr)
+arr.push(4)
+
+console.log(arr)
+arr.pop()
+console.log(arr)
+
+//push(Value) adds to an array
+//pop() removes the last item of the array
