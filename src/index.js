@@ -443,67 +443,69 @@
 // student.name = "Matthew"
 // console.log(student)
 
-const info = {
-    firstName: 'John',
-    lastName: 'Smith',
-    dateOfBirth: '1st DEC 2000',
-    friends: ['Bob', 'Tom']
-}
+// const info = {
+//     firstName: 'John',
+//     lastName: 'Smith',
+//     dateOfBirth: '1st DEC 2000',
+//     friends: ['Bob', 'Tom']
+// }
 
-console.log(info.friends[0])
+// console.log(info.friends[0])
 
-const example = {
-    nestedObj: {
-        name: 'Alex'
-    }
-}
-console.log(example)
+// const example = {
+//     nestedObj: {
+//         name: 'Alex'
+//     }
+// }
+// console.log(example)
 
-const anotherObj = new Object()
+// const anotherObj = new Object()
 
-console.log(anotherObj)
+// console.log(anotherObj)
 
-const propsName = 'firstName'
+// const propsName = 'firstName'
 
-const objOne = {
-    [propsName.toUpperCase()]: 'Alex'
-}
+// const objOne = {
+//     [propsName.toUpperCase()]: 'Alex'
+// }
 
-console.log(objOne)
+// console.log(objOne)
 
-const objTwo = {
-    firstName: 'Alex',
-    lastName: 'Ali',
-    printFullName() {
-        //Remember Back Ticks ``//
-        return `${this.firstName} ${this.lastName}`
-    }
-}
+// const objTwo = {
+//     firstName: 'Alex',
+//     lastName: 'Ali',
+//     printFullName() {
+//         //Remember Back Ticks ``//
+//         return `${this.firstName} ${this.lastName}`
+//     }
+// }
 
-console.log(objTwo.printFullName())
+// console.log(objTwo.printFullName())
 
-console.log(objTwo.firstName)
-console.log(objTwo['firstName'])
+// console.log(objTwo.firstName)
+// console.log(objTwo['firstName'])
 
-console.log(objTwo.hasOwnProperty('lastName'))
-console.log(objTwo.hasOwnProperty('address'))
+// console.log(objTwo.hasOwnProperty('lastName'))
+// console.log(objTwo.hasOwnProperty('address'))
 
-//Changing the 'Name' property witin an object//
+// //Changing the 'Name' property witin an object//
 
-objTwo.firstName = 'Matt'
-console.log(objTwo.firstName)
+// objTwo.firstName = 'Matt'
+// console.log(objTwo.firstName)
 
-//Deleting a value within an object//
+// //Deleting a value within an object//
 
-const newProps = delete objTwo.firstName
-console.log(newProps)
+// const newProps = delete objTwo.firstName
+// console.log(newProps)
 
-//or
+// //or
 
-console.log(delete objTwo.firstName)
-console.log(objTwo.hasOwnProperty('firstName'))
+// console.log(delete objTwo.firstName)
+// console.log(objTwo.hasOwnProperty('firstName'))
 
-//Also
+// //Also
 
-const newProps = delete objTwo.firstName
-console.log(newProps)
+// const newProps = delete objTwo.firstName
+// console.log(newProps)
+
+// Week-6 class 2
