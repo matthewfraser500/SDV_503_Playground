@@ -552,7 +552,7 @@
 //(objects, arrays)
 
 //Primiate data sits within the call stack
-//(Boolean, numbers, strings etc)
+//(Boolean, numbers, strings, functions)
 
 // const numbers = 0
 // numbers = 1 + 2 + 3 + 4 + 5
@@ -588,3 +588,32 @@ console.log(arr)
 
 //push(Value) adds to an array
 //pop() removes the last item of the array
+
+//Functions
+
+
+function bottleCapper(String) {
+    return bottle + cap;
+}
+
+bottleCapper('green bottle', 'white cap');
+console.log(bottleCapper())
+
+const a = 60
+const b = 40
+
+function func(number) {
+return a + b
+}
+
+console.log(func());
+
+function bottleCapper(bottle, cap) {
+    return bottle + cap;
+}
+bottleCapper("green bottle", "white cap");
+bottleCapper("5", 5);
+bottleCapper(null, undefined)
+bottleCapper(Symbol());
+bottleCapper({});
+bottleCapper(bottleCapper("green bottle", "white cap"));
