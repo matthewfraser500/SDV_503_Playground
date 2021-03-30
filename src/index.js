@@ -613,7 +613,20 @@ function bottleCapper(bottle, cap) {
 }
 bottleCapper("green bottle", "white cap");
 bottleCapper("5", 5);
-bottleCapper(null, undefined)
+bottleCapper(null, undefined);
 bottleCapper(Symbol());
-bottleCapper({});
+bottleCapper([]);
 bottleCapper(bottleCapper("green bottle", "white cap"));
+
+// DOESN'T WORK
+
+const a = 10
+const b = 20
+const c = 30
+const d = 40
+
+function add(a, b, c, d) {
+    return a + b + c + d
+}
+
+console.log(add());
