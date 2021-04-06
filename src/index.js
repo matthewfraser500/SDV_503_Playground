@@ -592,41 +592,42 @@ console.log(arr)
 //Functions
 
 
-function bottleCapper(String) {
-    return bottle + cap;
-}
+// function bottleCapper(String) {
+//     return bottle + cap;
+// }
 
-bottleCapper('green bottle', 'white cap');
-console.log(bottleCapper())
+// bottleCapper('green bottle', 'white cap');
+// console.log(bottleCapper())
 
-const a = 60
-const b = 40
+// const a = 60
+// const b = 40
 
-function func(number) {
-return a + b
-}
+// function func(number) {
+// return a + b
+// }
 
-console.log(func());
+// console.log(func());
 
-function bottleCapper(bottle, cap) {
-    return bottle + cap;
-}
-bottleCapper("green bottle", "white cap");
-bottleCapper("5", 5);
-bottleCapper(null, undefined);
-bottleCapper(Symbol());
-bottleCapper([]);
-bottleCapper(bottleCapper("green bottle", "white cap"));
+// function bottleCapper(bottle, cap) {
+//     return bottle + cap;
+// }
+// bottleCapper("green bottle", "white cap");
+// bottleCapper("5", 5);
+// bottleCapper(null, undefined);
+// bottleCapper(Symbol());
+// bottleCapper([]);
+// bottleCapper(bottleCapper("green bottle", "white cap"));
 
-// DOESN'T WORK
+// // DOESN'T WORK
 
-const a = 10
-const b = 20
-const c = 30
-const d = 40
+// const a = 10
+// const b = 20
+// const c = 30
+// const d = 40
 
-function add(a, b, c, d) {
-    return a + b + c + d
-}
+// function add(a, b, c, d) {
+//     return a + b + c + d
+// }
 
-console.log(add());
+// console.log(add());
+
