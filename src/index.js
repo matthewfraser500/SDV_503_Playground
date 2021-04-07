@@ -631,3 +631,106 @@ console.log(arr)
 
 // console.log(add());
 
+//Week7 Functions
+
+// Two arguments, return these arguments within an array
+
+// function args(a, b) {
+//     let arr = [a, b]
+//     return arr
+// }
+
+// console.log(args(1,2))
+
+// const args = (a, b) => [a, b]
+
+// //const args = (...a) => a
+
+// console.log(args(a, b))
+// console.log(typeof args)
+
+// args = {
+//     firstName: "Matt",
+//     lastName: "Fraser",
+//     age: 24
+// }
+
+// console.log(args)
+
+// // forloop ES6
+// function oddOrEven(arr) {
+//     let count = 0
+//     arr.forEach(x => count +=x)
+//     return count%2 === 0 ? "even" : "odd"
+// }
+
+// console.log(oddOrEven(arr))
+
+// // forloop ES5
+// function oddOrEven(arr) {
+//     let count = 0
+//     for (let i = 0; i < arr.length; i++) {
+//         count+= arr [i]
+//     }
+//     if (count % 2 === 0) {
+//         return "even"
+//     } else {
+//         return "odd"
+//     }
+// }
+// console.log(oddOrEven(arr))
+
+//Shorter version of ES6
+// const oddEven = (arr) => arr.reduce((a, b) => a + b, 0)% 2 === 0? "even" : "odd";
+
+// console.log(oddEven(arr))
+
+// let arr1 = ["3", "5.8"]
+// let newArr = []
+
+// function numberDatatype (arr1) {
+//     return arr1.split(newArr)
+// }
+
+// console.log(numberDatatype(arr1))
+
+// function arrToString(arr) {
+
+// let str = ''
+// for (let i = 0; i < arr.length; i++) {
+//     str += arr [i]
+// }
+// return str
+// }
+
+// const arrToString = (arr) => arr.join('');
+
+// function objToArr(obj) {
+//     let arr = [];
+//     for (let i in obj) {
+//         arr.push([i, obj[i]]);
+//     }
+//     return arr
+// }
+
+// const objToArray = obj => Object.enteries(obj)
+
+// function reverses(str) {
+//     let arr = str.split('')
+//     let revArr = arr.reverse()
+//     let joinArr = revArr.join('')
+
+//     return joinArr
+// }
+
+// function revString(str) {
+//     if (str === '') {
+//         return ''
+//     }
+//     else {
+//         return revString(str.subString(1)) + str.charAt(0)
+//     }
+// }
+
+const revStr = (str) => str.length < 2 ? str : reverse(str.slice(1, str.length)) + str[0]
+
