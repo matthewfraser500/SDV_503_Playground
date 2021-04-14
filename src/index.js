@@ -732,5 +732,70 @@ console.log(arr)
 //     }
 // }
 
-const revStr = (str) => str.length < 2 ? str : reverse(str.slice(1, str.length)) + str[0]
+//const revStr = (str) => str.length < 2 ? str : reverse(str.slice(1, str.length)) + str[0]
 
+// ["215", true, false, 2, 2.1, [], null] => [String]
+
+
+//This function prints the datatypes within the array
+// function arrayDataType(arr) {
+//     let newArr = [];
+//     for (let i = 0; i < arr.length; i++) {
+//         newArr.push(typeof arr[i])
+//     }
+//     return newArr
+// }
+
+// console.log(arrayDataType(["215", true, false, 2, 2.1, [], null]))
+
+// function arrayDataTypes(arr) {
+//     return arr.map(x => typeof x)
+// }
+
+// const arrayDataType = arr => arr.map(x => typeof x)
+
+// console.log(arrayDataType(["215", true, false, 2, 2.1, [], null]))
+
+// function moveArrByOne(arr) {
+//     let lastIndexValue = arr.pop()
+//     arr.unshift(lastIndexValue)
+//     return arr
+// }
+
+// console.log(moveArrByOne([20, 15, 68, 86, 1]))
+
+// let moveArrByOne = arr => [arr.pop(), ...arr]
+
+// console.log(moveArrByOne([20, 15, 68, 86, 1]))
+
+// function nestedArrays() {
+//     let newArr = [[], []]
+//     for (let i = 0; i < arr.length; i++) {
+//         if(parseInt(arr[i]) & 2 === 0) {
+//             newArr[0].push(parseInt(arr[i]))
+//         } else {
+//             newArr[1].push(parseInt(arr[i]))
+//         }
+// } return newArr
+
+// }
+
+// console.log(nestedArrays(newArr))
+
+//This refactors the nested array
+//you can also use string instead of number but add a plus sign
+
+// function nestedArrays(arr) {
+//     let even = arr.map(Number).filter(x => x % 2 === 0);
+//     let odd = arr.map(Number).filter(x => x % 2 !== 0);
+//     return [even, odd]
+// }
+
+// console.log(nestedArrays(["9", "4", "5", "8"]))
+
+function spaceString(str) {
+    let arr = Array.from(str).join("")
+    return arr
+}
+
+console.log(spaceString("Ali"))
