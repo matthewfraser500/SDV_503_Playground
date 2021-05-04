@@ -793,9 +793,28 @@ console.log(arr)
 
 // console.log(nestedArrays(["9", "4", "5", "8"]))
 
-function spaceString(str) {
+/* function spaceString(str) {
     let arr = Array.from(str).join("")
     return arr
 }
 
-console.log(spaceString("Ali"))
+console.log(spaceString("Ali")) */
+
+//These exercises will help with assessment 2
+
+//Create a function that can concatanante any input of arrays where it is variable
+//concat([1, 2, 3], [4, 5],)
+
+//args repeats any number of arguments
+//you can use forloops with arrays
+//use concat result.concat here to concatinate
+
+function firstFunc(...args) {
+let result = [1,2,3,4,5];
+for (let i = 0; i < arguments.length; i++) {
+ result = result.concat(arguments[i])   
+}
+ return result
+}
+
+console.log(firstFunc(result))
