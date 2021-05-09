@@ -809,12 +809,108 @@ console.log(spaceString("Ali")) */
 //you can use forloops with arrays
 //use concat result.concat here to concatinate
 
-function firstFunc(...args) {
-let result = [1,2,3,4,5];
-for (let i = 0; i < arguments.length; i++) {
+/* function firstFunc(...args) {
+let result = [];
+for (let i = 0; [i] < arguments.length; i++) {
  result = result.concat(arguments[i])   
 }
  return result
 }
 
 console.log(firstFunc(result))
+
+function esSixFunc(...args) {
+    reutrn [].concat(...args)
+}
+*/
+
+//Create a function that takes two numbers as arguments (num, length)
+//(7, 5) => [7, 14, 21, 28, 35]
+
+
+//i++ incrementes i
+/*
+function firstFunction(num, length) {
+    let result = [];
+    for(let i = 1; i <= length; i++) {
+        result.push(num*1)
+    }
+return result
+}
+
+//ES6
+function esSixFunc (num, length) {
+    return [...Array(length).keys()].map((e, i) => (e+1)*num)
+}
+
+function ascDesFunc(array, string) {
+    switch(string) {
+        case "Asc":
+            return arr.sort((a, b) => a - b)
+            break
+        case 'Des':
+            return arr.sort((a, b) => b - a)
+            break
+        return arr
+    }
+}
+
+const checkTrueOrFalse = (...args) => args.every(Boolean)
+
+//Wrte a function that takes three arguments (x, y, z)
+// (3, 2, 3) => [[3, 3], [3, 3], [3, 3]]
+// 3 arrays, containg two numbers, values of 3
+
+//The fill() method changes all elements in an array to a static value, 
+//from a start index (default 0) to an end index (default array.length). It returns the modified array.
+
+function subArrays(x, y, z) {
+    return Array(x).fill(Array(y).fill(z))
+}
+
+//Create a function that takes an array of names and 
+//returns an array where only the first letter of each name is capitalized
+
+function capital(arr) {
+ for (let i = 0; i < arr.length; i++) {
+     arr[i] = arr[i].charAt(0).toUpperCase() + arr[i].toLowerCase().substring(1)
+ }  
+ return arr
+}
+
+//[AAAABBBBBBCCDDDAABB]
+
+function removeFunc(x) {
+    return Array.from(x).filter((e, i, a) => x !== a[i-1])
+}
+
+let esFiveFunc = function (x) {
+    let newArr = []
+    for(let i = 0; i < x.length; i++) {
+        if (x[i] !== x[i+1]) {
+            newArr.push(x[i])
+        }
+    }
+    return newArr
+}
+*/
+function func(arr1, arr2) {
+    for(let i = 0; i <= arr2.length; i++) {
+        if (arr1[0] !== arr2[i]) {
+            console.log("yeet1")
+            return false
+            
+        }
+        else if (arr1[1] !== arr2[i]) {
+            console.log("yeet2")
+            return false
+            
+        }
+    }
+    return true;
+}
+
+let arr1 = [1, 3]
+let arr2 = [1, 3, 3, 5]
+
+console.log(func(arr1, arr2))
