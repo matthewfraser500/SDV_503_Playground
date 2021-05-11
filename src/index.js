@@ -894,6 +894,8 @@ let esFiveFunc = function (x) {
     return newArr
 }
 */
+
+/*
 function func(arr1, arr2) {
     for(let i = 0; i <= arr2.length; i++) {
         if (arr1[0] !== arr2[i]) {
@@ -914,3 +916,35 @@ let arr1 = [1, 3]
 let arr2 = [1, 3, 3, 5]
 
 console.log(func(arr1, arr2))
+*/
+
+/*
+function calc(num1, operator, num2) {
+//The object here sets up the mathmatical operators 
+    operations = {
+        "+": (a, b) => a + b,
+        "-": (a, b) => a - b,
+        "*": (a, b) => a * b,
+        "/": (a, b) => a / b 
+    }
+    return operations[operator][num1, num2]
+} console.log(calc(num1, num2))
+*/
+function sum(input){
+           
+    if (toString.call(input) !== "[object Array]")
+       return false;
+         
+               var total =  0;
+               for(var i=0;i<input.length;i++)
+                 {                  
+                   if(isNaN(input[i])){
+                   continue;
+                    }
+                     total += Number(input[i]);
+                  }
+                return total;
+               }
+   console.log(sum([1,2,3]));
+   console.log(sum([100,-200,3]));
+   console.log(sum([1,2,'a',3]));
