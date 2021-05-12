@@ -930,6 +930,8 @@ function calc(num1, operator, num2) {
     return operations[operator][num1, num2]
 } console.log(calc(num1, num2))
 */
+
+/*
 function sum(input){
            
     if (toString.call(input) !== "[object Array]")
@@ -948,3 +950,28 @@ function sum(input){
    console.log(sum([1,2,3]));
    console.log(sum([100,-200,3]));
    console.log(sum([1,2,'a',3]));
+   */
+
+   /*
+   function flatArray(arr) {
+    let result = [];
+
+    if (arr === undefined) {
+        return arr;
+    }
+    
+    arr.forEach(function (e) {
+        if(Array.isArray(e)) {
+            result = result.concat(flatArray(e))
+        } else {
+            if(typeof e === "function") {
+                result.push(e())
+            } else {
+                result.push(e)
+            }
+        }
+    }
+}
+
+*/
+
